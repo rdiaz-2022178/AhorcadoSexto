@@ -1,4 +1,7 @@
 .teclado{
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+}
+
+.button{
+    background-color: red;
 }

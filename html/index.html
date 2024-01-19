@@ -9,12 +9,12 @@
 </head>
 
 <body>
-    <h1>ahorcado</h1>
+    <center><h1>ahorcado</h1></center>
 
-    <canvas id="myCanvas" width="200" height="100"></canvas>
+    <center><canvas id="myCanvas" width="600" height="500"></canvas></center>
 
     <div class="teclado" >
-        <div class="row1">
+        <div class="row">
             <button>Q</button>
             <button>W</button>
             <button>E</button>
@@ -26,7 +26,7 @@
             <button>O</button>
             <button>P</button>
         </div>
-        <div class="row2">
+        <div class="row">
             <button>A</button>
             <button>S</button>
             <button>D</button>
@@ -38,7 +38,7 @@
             <button>L</button>
             <button>N</button>
         </div>
-        <div class="row3">
+        <div class="row">
             <button>Z</button>
             <button>X</button>
             <button>C</button>
@@ -49,9 +49,14 @@
 
         </div>
 
+        <div class="row">
+            <button class="iniciar" onclick="iniciarJuego()">INICIAR</button>
+        </div>
+
 
     </div>
 </body>
 <script src="/js/main.js"></script>
+<script src="/js/canvas.js"></script>
 
 </html>
