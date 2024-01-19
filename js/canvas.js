@@ -22,7 +22,7 @@ function baseAhorcado(){
 }
 
 function borrarAhorcado(){
-    ctx.clearReact(0,0,600,500);
+    ctx.clearRect(0,0,600,500);
 }
 
 function baseLetras(){
