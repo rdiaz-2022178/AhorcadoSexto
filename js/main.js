@@ -17,4 +17,18 @@ function seleccionarPalabra(){
 
 function obtenerLetra(letra){
     let btnSeleccionado = document.getElementById("tecla"+letra);
+    if (palabraSecreta.includes(letra)) {
+        btnSeleccionado.disabled = true;
+        btnSeleccionado.style.backgroundColor = "green"
+        ctx.font = "30px Arial";
+        ctx.fillText(letra, 10, 50 );
+        tx.stroke();
+    } else {
+        btnSeleccionado.disabled = true;
+        btnSeleccionado.style.backgroundColor = "red"
+    }
+}
+
+function mostrarLetra(){
+
 }
