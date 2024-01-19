@@ -1,10 +1,19 @@
 let palabras = ["SOL", "ARBOL", "SENSACION"];
+let palabraSecreta = "";
 
 
-var canvas = document.getElementById("myCanvas");
-var ctx = canvas.getContext("2d");
+
 
 
 function iniciarJuego(){
-    baseAhorcado();s
+    seleccionarPalabra();
+    baseAhorcado();
+    baseLetras();
+    borrarAhorcado();
+
+}
+
+function seleccionarPalabra(){
+    let pal = palabras[Math.floor(Math.random()*palabras.length)];
+    palabraSecreta = pal;
 }

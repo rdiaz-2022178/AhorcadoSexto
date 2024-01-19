@@ -1,5 +1,8 @@
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
 function baseAhorcado(){
-    tablero.lineWidth =14;
+    ctx.lineWidth =8;
     
     ctx.fillStyle = "rgba(255,255,255,0.1)";
     ctx.strokeStyle = "black" ;
@@ -20,4 +23,19 @@ function baseAhorcado(){
 
 function borrarAhorcado(){
     ctx.clearReact(0,0,600,500);
+}
+
+function baseLetras(){
+    ctx.lineWidth =2;
+ 
+    let anchura=600/palabraSecreta.length;
+
+    for(let i=0;i<palabraSecreta.length;i++){
+
+        ctx.moveTo(80+(anchura*i),295);
+        ctx.lineTo(120+(anchura*i),295);
+        
+    }
+    ctx.stroke();
+    ctx.closePath();
 }
